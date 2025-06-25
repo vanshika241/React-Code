@@ -1,46 +1,54 @@
-# 📲 FaceOfficial Frontend
+# 🧠 FaceOfficial – Age & Identity Verification System
 
-This is the **React + Tailwind CSS** frontend for **VyomID** — an Age & Identity Verification System that compares Aadhaar details with a live selfie to verify identity and age.
+FaceOfficial is a smart identity verification system that extracts age from Aadhaar and compares the Aadhaar photo with a live selfie to validate identity. It leverages OCR, face detection, and image analysis to give accurate and fast verification results.
+
+---
+
+## 🚀 Features
+
+- 📄 **Aadhaar OCR & Age Extraction** – Extracts Date of Birth using OCR and calculates age.
+- 🤳 **Live Selfie Capture** – Captures selfie directly in-browser using webcam.
+- 🧠 **AI-Based Face Matching** – Compares Aadhaar photo with selfie using facial embeddings.
+- ⚠️ **Image Quality Analysis** – Checks for blur, lighting, and warnings.
+- 📊 **Confidence Score** – Returns similarity % and match/not matched verdict.
+- 🖼 **1:1 Face Previews** – Cropped Aadhaar & selfie face images returned for display.
 
 ---
 
-## 🚀 Getting Started
+## 📦 Tech Stack
 
-Follow these steps to run the frontend locally:
+- ⚛️ **React** (with Vite) – Fast frontend framework for building user interfaces
+- 🎨 **Tailwind CSS** – Utility-first CSS framework for styling
+- 🧭 **React Router** – Handles client-side routing
+- 📸 **React Webcam** – Captures live webcam feed for selfie verification
+- 🔗 **Axios** – Handles HTTP requests to the backend
 
 ---
+
 
 ### 1. Clone the Repository
-
 ```bash
-git clone https://github.com/your-username/VyomID.git
-###2. Navigate to the Frontend Folder
-bash
-Copy
-Edit
+git clone https://github.com/your-username/FaceOfficial.git
+```
+
+### 2. Navigate to the Frontend Folder
+```bash
 cd frontend
-3. Install Dependencies
-bash
-Copy
-Edit
+```
+### 3. Install Dependencies
+```bash
 npm install
-4. Create a .env File (Optional)
-Inside the frontend directory, create a .env file:
-
-bash
-Copy
-Edit
+```
+### 4. Create a .env File (Optional)
+```bash
 VITE_BACKEND_URL=http://localhost:5000
-Update it if your backend is deployed.
-
-5. Run the Development Server
-bash
-Copy
-Edit
+```
+### 5. Run the Development Server
+```bash
 npm run dev
+```
 Open your browser and visit:
 
-arduino
-Copy
-Edit
 http://localhost:5173
+
+
